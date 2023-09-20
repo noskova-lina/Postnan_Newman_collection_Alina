@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="HW_Part_3_Noskova_Alina" tests="129" time="11.186">
+  <testsuite name="E2E SCENARIOS / S1 Admin manages categories / Admin logs into the app using credentials" id="15ac3a54-0226-4746-a301-2ca62f8f485c" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.755">
+    <testcase name="Status code is 200" time="0.755" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response contains the required field 'accessToken'" time="0.755" classname="HwPart3NoskovaAlina"/>
+    <testcase name="accessToken is a non-empty string" time="0.755" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that the accessToken is stored in the collection variable 'AccessToken_admin'" time="0.755" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that accessToken is not null or undefined" time="0.755" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S1 Admin manages categories / Admin gets the list of categories" id="ac0d409e-7ef8-45a3-b3b8-dbdbce16ac77" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.074">
+    <testcase name="Response status code is 200" time="0.074" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response is an array with at least one element" time="0.074" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Each element in the response array has the required fields - id and title" time="0.074" classname="HwPart3NoskovaAlina"/>
+    <testcase name="id is a non-negative integer" time="0.074" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.074" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S1 Admin manages categories / Admin creates a category" id="a0196d44-8ac8-4bed-abb3-2229b7caaedd" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.049">
+    <testcase name="Status code is 200" time="0.049" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.049" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S1 Admin manages categories / Admin changes category" id="d344facc-ec98-463e-9c55-2848a309374b" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.041">
+    <testcase name="Response status code is 200" time="0.041" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Validate id field is a non-negative integer" time="0.041" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Validate the title field is a non-empty string" time="0.041" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Validate response body fields" time="0.041" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S1 Admin manages categories / Admin gets category by id" id="45721fde-0446-4ed5-82d9-4dcc601543e3" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 200" time="0.026" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is as expected" time="0.026" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S1 Admin manages categories / Admin removes category by id" id="c9bb08b4-52e7-436f-b00e-bbe2330054cf" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.038">
+    <testcase name="Response status code is 200" time="0.038" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the 'result' field" time="0.038" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.038" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S2 Teacher manages courses / New user creates an account as a teacher" id="8f94054e-8f22-4516-ae29-ede6ba8484aa" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.335">
+    <testcase name="Status code is 200" time="0.335" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Username is the same in request and response" time="0.335" classname="HwPart3NoskovaAlina"/>
+    <testcase name="First Name is the same in request and response" time="0.335" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Last Name is the same in request and response" time="0.335" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Email is the same in request and response" time="0.335" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S2 Teacher manages courses / Teacher logs into the app using credentials" id="c5506264-828f-4bed-a1c5-262441a83680" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.342">
+    <testcase name="Status code is 200" time="0.342" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the required field - accessToken" time="0.342" classname="HwPart3NoskovaAlina"/>
+    <testcase name="accessToken is a non-empty string" time="0.342" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify AccessToken_teacher collection variable" time="0.342" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S2 Teacher manages courses / Teacher gets a list of available categories" id="5bbb32d0-aad6-4041-840e-abf829c1177e" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.079">
+    <testcase name="Response status code is 200" time="0.079" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response body is an array" time="0.079" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Each object in the array has the required fields - id and title" time="0.079" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Validate id is a non-negative integer" time="0.079" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Validate that the 'title' is a non-empty string" time="0.079" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S2 Teacher manages courses / Teacher creates a new course in the selected category" id="fe73bea7-d659-414a-9555-bb0a8f2eaeb8" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.172">
+    <testcase name="Status code is 200" time="0.172" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Status code name has string" time="0.172" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.172" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.172" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Category Id is the same in request and response" time="0.172" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S2 Teacher manages courses / Teacher gets created courses" id="7c30fa23-cc06-4423-ae9d-323937e5a464" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.282">
+    <testcase name="Status code is 200" time="0.282" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Id is as expected" time="0.282" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S2 Teacher manages courses / Teacher changes a course" id="6be38a28-cd1c-4d3c-b3bf-e6976efdc453" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.064">
+    <testcase name="Status code is 200" time="0.064" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.064" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.064" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S2 Teacher manages courses / Teacher creates course materials" id="7563212e-e567-4e05-ae54-ced0d5c4f249" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.047">
+    <testcase name="Status code is 200" time="0.047" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.047" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Data is the same in request and response" time="0.047" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S2 Teacher manages courses / Teacher gets course materials" id="f819c8ec-aa76-4900-b7cb-57da4975c791" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.028">
+    <testcase name="Status code is 200" time="0.028" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is as expected" time="0.028" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Data is as expected" time="0.028" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S2 Teacher manages courses / Teacher removes a course" id="869db439-961a-4528-8cad-260a46d49601" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.067">
+    <testcase name="Status code is 200" time="0.067" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response message indicates successful deletion" time="0.067" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S3 Student interacts with courses / New user creates an account as a student" id="e87b9214-9581-476c-af0d-8e57eb66a01a" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.362">
+    <testcase name="Status code is 200" time="0.362" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Username is the same in request and response" time="0.362" classname="HwPart3NoskovaAlina"/>
+    <testcase name="First Name is the same in request and response" time="0.362" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Last Name is the same in request and response" time="0.362" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Email is the same in request and response" time="0.362" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S3 Student interacts with courses / Student logs into the app using credentials" id="e23b5cd7-0ffd-41a1-98aa-69467067c783" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.349">
+    <testcase name="Status code is 200" time="0.349" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the required field - accessToken" time="0.349" classname="HwPart3NoskovaAlina"/>
+    <testcase name="accessToken is a non-empty string" time="0.349" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that the value of accessToken is stored in the collection variable 'AccessToken_student'" time="0.349" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S3 Student interacts with courses / Student receives a list of available courses" id="3628131d-f1fa-4bbf-a946-6e5e1580cb2b" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.691">
+    <testcase name="Status code is 200" time="0.691" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response contains at least one course object" time="0.691" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Each course object has the required properties" time="0.691" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S3 Student interacts with courses / Student receives materials about the selected course" id="daeb9feb-b149-402f-8f1d-ed2e764c6749" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 200" time="0.027" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Each material has a non-empty title" time="0.027" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Each material has non-empty data" time="0.027" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that the response contains course with expected title" time="0.027" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that the response contains course with expected data" time="0.027" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S3 Student interacts with courses / Student enrolls in the selected course" id="5832acd4-10b7-46d3-86ad-f4ba70754ce9" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.048">
+    <testcase name="Status code is 200" time="0.048" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The result field is not empty" time="0.048" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response includes the correct enrollment message" time="0.048" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S3 Student interacts with courses / Student checks the list of courses he/she has enrolled in" id="9d81a25e-76fe-43d8-a32d-c458d19c95b1" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 200" time="0.026" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response contains at least one element" time="0.026" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response contains required fields - userId and courseId" time="0.026" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="E2E SCENARIOS / S3 Student interacts with courses / Student leaves the course for which she/he was enrolled" id="4cc0a9f6-1151-4322-8c6e-dd3fc5a4210b" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.045">
+    <testcase name="Status code is 200" time="0.045" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response includes the correct message" time="0.045" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Login / Sign into the app (admin)" id="601e9752-ec41-4b4a-bcad-5d4959b69c4f" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.277">
+    <testcase name="Status code is 200" time="0.277" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response contains the required field 'accessToken'" time="0.277" classname="HwPart3NoskovaAlina"/>
+    <testcase name="accessToken is a non-empty string" time="0.277" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that the accessToken is stored in the collection variable 'AccessToken_admin'" time="0.277" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that accessToken is not null or undefined" time="0.277" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Positive / Create a category (as admin)" id="1161d037-3deb-43c7-b4e1-81e0d43a59e3" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.062">
+    <testcase name="Status code is 200" time="0.062" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.062" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Positive / Checking that the category has been created" id="2dee31be-05ed-4de0-9b7f-7c435db16ab6" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 200" time="0.025" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is as expected" time="0.025" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Positive / Category with only EN alphabet and spaces in title (as admin)" id="1c55d730-9453-4568-a0c2-3b09b4faa647" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.039">
+    <testcase name="Status code is 200" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the required fields - id and title" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="id is a non-negative integer" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that the category ID is stored in the collection variable 'Test_category_1'" time="0.039" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Positive / Category with only RU alphabet and spaces in title (as admin)" id="0f4e6aa7-796c-4aa8-8bec-adc496ffce84" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.037">
+    <testcase name="Status code is 200" time="0.037" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the required fields - id and title" time="0.037" classname="HwPart3NoskovaAlina"/>
+    <testcase name="id is a non-negative integer" time="0.037" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.037" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that the category ID is stored in the collection variable 'Test_category_2'" time="0.037" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Positive / Category with only the upper case RU/EN alphabet in the title (as admin)" id="d10cfda8-e35c-4d1f-8f36-5267f1f6628e" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.039">
+    <testcase name="Status code is 200" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the required fields - id and title" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="id is a non-negative integer" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that the category ID is stored in the collection variable 'Test_category_3'" time="0.039" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Positive / Category with numbers in string format in title (as admin)" id="8c20e3c8-07ec-4f71-98d8-9439bde0c493" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.056">
+    <testcase name="Status code is 200" time="0.056" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the required fields - id and title" time="0.056" classname="HwPart3NoskovaAlina"/>
+    <testcase name="id is a non-negative integer" time="0.056" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.056" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that the category ID is stored in the collection variable 'Test_category_4'" time="0.056" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Positive / Category with min allowed length title (as admin)" id="b9a87ff4-2157-4222-abfa-27952927278f" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.039">
+    <testcase name="Status code is 200" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the required fields - id and title" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="id is a non-negative integer" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that the category ID is stored in the collection variable 'Test_category_5'" time="0.039" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Positive / Category with more than min allowed length title (as admin)" id="c90bc79d-627a-4cf6-98cb-759932507878" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.045">
+    <testcase name="Status code is 200" time="0.045" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the required fields - id and title" time="0.045" classname="HwPart3NoskovaAlina"/>
+    <testcase name="id is a non-negative integer" time="0.045" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.045" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that the category ID is stored in the collection variable 'Test_category_6'" time="0.045" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Positive / Category with less than max allowed length title (as admin)" id="f96d42a6-4347-4a60-b73b-4fe79b06f07f" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.041">
+    <testcase name="Status code is 200" time="0.041" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the required fields - id and title" time="0.041" classname="HwPart3NoskovaAlina"/>
+    <testcase name="id is a non-negative integer" time="0.041" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.041" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that the category ID is stored in the collection variable 'Test_category_7'" time="0.041" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Positive / Category with max allowed length title (as admin)" id="aed0e934-b7df-4a73-bef7-2768a8320560" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.042">
+    <testcase name="Status code is 200" time="0.042" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the required fields - id and title" time="0.042" classname="HwPart3NoskovaAlina"/>
+    <testcase name="id is a non-negative integer" time="0.042" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.042" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify that the category ID is stored in the collection variable 'Test_category_8'" time="0.042" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Negative / Category with NOT RU/EN alphabet in title (as admin)" id="f1be35ba-0f07-4b1f-af6c-0c4999333b9f" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.020">
+    <testcase name="Status code is 400" time="0.020" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.020" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Negative / Category with numbers not in the string format (as admin)" id="698ab354-3309-4661-b77c-78f2227c441f" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.018">
+    <testcase name="Status code is 400" time="0.018" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.018" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Negative / Category with special symbols in string format in title (as admin)" id="4fb0d27f-b5ee-4323-aa8b-467ab93c2686" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.018">
+    <testcase name="Status code is 400" time="0.018" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.018" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Negative / Category with empty title (as admin)" id="bda254df-22c1-4fc5-9cdb-d3c4499372ab" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.020">
+    <testcase name="Status code is 400" time="0.020" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.020" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Negative / Category with only space in title (as admin)" id="491608f6-a00b-4261-bb95-f7f22768b522" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.019">
+    <testcase name="Status code is 400" time="0.019" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.019" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Negative / Category with boolean in title (as admin)" id="cd642b42-7084-4f0a-a9db-6a1f7076eb83" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.018">
+    <testcase name="Status code is 400" time="0.018" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.018" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Negative / Category with less than min allowed length title (as admin)" id="a864824b-cf7e-481d-bf1a-f8100429b4f1" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.019">
+    <testcase name="Status code is 400" time="0.019" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.019" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Creating a category / Negative / Category with more than max allowed length title (as admin)" id="d9026f3b-9bf0-42f5-9037-31981a0c9c6d" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.019">
+    <testcase name="Status code is 400" time="0.019" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.019" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Getting categories / Get the list of categories (as admin)" id="a966e39d-7793-47ce-a1e9-9f580f057d5b" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.065">
+    <testcase name="Response status code is 200" time="0.065" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response is an array with at least one element" time="0.065" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Each element in the response array has the required fields - id and title" time="0.065" classname="HwPart3NoskovaAlina"/>
+    <testcase name="id is a non-negative integer" time="0.065" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.065" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Getting categories / Get category by id (as an admin)" id="98a30dfb-4932-4156-b76e-222d35277cec" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.025">
+    <testcase name="Response status code is 200" time="0.025" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has required fields - id and title" time="0.025" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Id is a non-negative integer" time="0.025" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.025" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Chenging category / Change category (as an admin)" id="0dbf20f5-57d3-4977-91dd-c1ebf60a35c0" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.038">
+    <testcase name="Response status code is 200" time="0.038" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Validate id field is a non-negative integer" time="0.038" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Validate the title field is a non-empty string" time="0.038" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Validate response body fields" time="0.038" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Chenging category / Checking that the category has been changed" id="41cfbfb5-5fa4-4e1c-a9c7-38e6339ad8bc" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.024">
+    <testcase name="Status code is 200" time="0.024" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is as expected" time="0.024" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Deleting category / Remove category by id (as an admin)" id="e483ba5e-06eb-4ff5-8ef1-8c1c6c5ae08b" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.036">
+    <testcase name="Response status code is 200" time="0.036" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the 'result' field" time="0.036" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.036" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Deleting category / Checking that the category has been deleted" id="a873279d-1ced-4475-a061-589d08d374c3" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.061">
+    <testcase name="Response status code is 200" time="0.061" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Course with id {{categoryId_1}} is not in the list" time="0.061" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Deleting category / Remove test category 1" id="5c607331-944d-4573-acca-fc64897b3b72" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.036">
+    <testcase name="Response status code is 200" time="0.036" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the 'result' field" time="0.036" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.036" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Deleting category / Remove test category 2" id="deb8995b-338a-46f7-8b03-1c16c6a3e644" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.037">
+    <testcase name="Response status code is 200" time="0.037" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the 'result' field" time="0.037" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.037" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Deleting category / Remove test category 3" id="2a7e8381-acd4-4451-afae-e1531e72cc60" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.039">
+    <testcase name="Response status code is 200" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the 'result' field" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.039" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Deleting category / Remove test category 4" id="8a1ff856-1fbe-4d36-960b-6f46109b76a4" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.034">
+    <testcase name="Response status code is 200" time="0.034" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the 'result' field" time="0.034" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.034" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Deleting category / Remove test category 5" id="ee737914-8694-4314-8698-ce57a5c79da4" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.038">
+    <testcase name="Response status code is 200" time="0.038" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the 'result' field" time="0.038" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.038" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Deleting category / Remove test category 6" id="400ba9db-d4fa-4b62-bda8-8f7839e0d70e" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.041">
+    <testcase name="Response status code is 200" time="0.041" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the 'result' field" time="0.041" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.041" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Deleting category / Remove test category 7" id="01c49c5e-da0f-4cab-ab4f-49429436ecfc" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.036">
+    <testcase name="Response status code is 200" time="0.036" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the 'result' field" time="0.036" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.036" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Category / Deleting category / Remove test category 8" id="801211cd-96e0-4b19-bfe5-c714a9491871" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.039">
+    <testcase name="Response status code is 200" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the 'result' field" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.039" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="ADMIN Endpoints testing / Course / Get the list of courses (as an admin)" id="6c4ca3a3-53a6-4b46-8ac3-abd23a0bcc9e" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.654">
+    <testcase name="Response status code is 200" time="0.654" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response is an array" time="0.654" classname="HwPart3NoskovaAlina"/>
+    <testcase name="id is a non-negative integer" time="0.654" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.654" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / User / Create a teacher" id="2c12f362-23c4-409c-9ed6-382e71b503fb" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.324">
+    <testcase name="Status code is 200" time="0.324" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Username is the same in request and response" time="0.324" classname="HwPart3NoskovaAlina"/>
+    <testcase name="First Name is the same in request and response" time="0.324" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Last Name is the same in request and response" time="0.324" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Email is the same in request and response" time="0.324" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Login / Sign into the app (teacher)" id="f782b46a-d271-48a9-95d8-e4fd38997655" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.462">
+    <testcase name="Status code is 200" time="0.462" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the required field - accessToken" time="0.462" classname="HwPart3NoskovaAlina"/>
+    <testcase name="accessToken is a non-empty string" time="0.462" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Verify AccessToken_teacher collection variable" time="0.462" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Category / Get the list of categories (as a teacher)" id="5e86ea5a-a3b3-40d0-bd3d-c1c6c7c143cf" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.069">
+    <testcase name="Response status code is 200" time="0.069" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response body is an array" time="0.069" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Each object in the array has the required fields - id and title" time="0.069" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Validate id is a non-negative integer" time="0.069" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Validate that the 'title' is a non-empty string" time="0.069" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Category / Get category by id (as a teacher)" id="e3bd28b4-b75c-4e3e-a316-850479c2ccf0" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.029">
+    <testcase name="Response status code is 200" time="0.029" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has required fields - id and title" time="0.029" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Id is a non-negative integer" time="0.029" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title should be a non-empty string" time="0.029" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response time is less than 500ms" time="0.029" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Category / Try to create a category (as a teacher)" id="e5a3b96a-7c3b-43d1-a919-66335b783771" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 403" time="0.026" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.026" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Category / Try to change category (as a teacher)" id="87d71293-d349-4e02-8d13-4a9f06d841bf" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 403" time="0.026" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.026" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Category / Try to remove category by id (as a teacher)" id="136f29b2-bde4-4782-9d39-1d895c860dda" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.025">
+    <testcase name="Status code is 403" time="0.025" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.025" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Positive / Create a course (teacher)" id="45876192-e281-4aa7-96fc-aa18e412469b" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.055">
+    <testcase name="Status code is 200" time="0.055" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Status code name has string" time="0.055" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.055" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.055" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Category Id is the same in request and response" time="0.055" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Positive / Checking that the course has been created" id="5cc2f890-d492-48d2-b2d9-eddc5e61b4e1" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.030">
+    <testcase name="Status code is 200" time="0.030" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Id is as expected" time="0.030" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Positive / Title and description with only RU alphabet and spaces" id="e36cecf8-86a4-4197-b5ca-75a7642e671d" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.057">
+    <testcase name="Status code is 200" time="0.057" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.057" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.057" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Category Id is the same in request and response" time="0.057" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Positive / Title and description with NOT RU/EN alphabet" id="dfecf6d3-719f-491e-af92-176ac099e699" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.052">
+    <testcase name="Status code is 200" time="0.052" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.052" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.052" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Category Id is the same in request and response" time="0.052" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Positive / Title and description with numbers in the string format" id="fe31fd40-b3c2-4cd9-892f-eb203b2bcc5b" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.060">
+    <testcase name="Status code is 200" time="0.060" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.060" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.060" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Category Id is the same in request and response" time="0.060" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Positive / Title and description with special symbols in string format" id="79bd9f62-0375-4820-a03b-2bda9fdf887f" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.057">
+    <testcase name="Status code is 200" time="0.057" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.057" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.057" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Category Id is the same in request and response" time="0.057" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Positive / Title with min allowed length" id="ac9e751c-a1b3-4ae5-ba3d-d74a755227cf" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.065">
+    <testcase name="Status code is 200" time="0.065" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.065" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.065" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Category Id is the same in request and response" time="0.065" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Positive / Description with min allowed length" id="a1a87696-487d-40f0-9942-5c0bd681587a" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.059">
+    <testcase name="Status code is 200" time="0.059" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.059" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.059" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Category Id is the same in request and response" time="0.059" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Positive / Title with less than max allowed length" id="2b3ff281-aa58-4929-a6e1-5eb293c041c5" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.052">
+    <testcase name="Status code is 200" time="0.052" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.052" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.052" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Category Id is the same in request and response" time="0.052" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Positive / Description with less than max allowed length" id="3f79eae5-e618-48ad-ac6a-36f409bb1152" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.056">
+    <testcase name="Status code is 200" time="0.056" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.056" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.056" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Category Id is the same in request and response" time="0.056" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Positive / Title with max allowed length title" id="bcfa9385-7a6a-4239-b5f0-796129bd03fc" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.052">
+    <testcase name="Status code is 200" time="0.052" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.052" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.052" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Category Id is the same in request and response" time="0.052" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Positive / Description with max allowed length title" id="06894a81-9c1e-426d-8d45-c8af7ced7fc6" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.052">
+    <testcase name="Status code is 200" time="0.052" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.052" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.052" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Category Id is the same in request and response" time="0.052" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Negative / Title with numbers NOT in the string format" id="2684d13d-920e-4442-9ee1-54d3e6b7a6a5" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.024">
+    <testcase name="Status code is 400" time="0.024" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.024" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Negative / Description with numbers NOT in the string format" id="678a4af9-3770-4508-83cb-ab737b717f8f" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.020">
+    <testcase name="Status code is 400" time="0.020" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.020" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Negative / Title is empty" id="c7fad8b9-6b06-4032-af8d-08cd61adbf32" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.020">
+    <testcase name="Status code is 400" time="0.020" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.020" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Negative / Description is empty" id="245b1f9f-f12a-488e-9d47-5384762b5979" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.021">
+    <testcase name="Status code is 400" time="0.021" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.021" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Negative / Title with only space" id="719892db-312d-493f-94e2-a3954048de41" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.021">
+    <testcase name="Status code is 400" time="0.021" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.021" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Negative / Description with only space" id="d47e5b4b-217d-4b2b-861b-0fa0c688cf97" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.021">
+    <testcase name="Status code is 400" time="0.021" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.021" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Negative / Title with boolean" id="a4d0b939-f638-426a-894c-e862762a4fda" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.020">
+    <testcase name="Status code is 400" time="0.020" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.020" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Negative / Description with boolean" id="0060de68-f3d5-4f2f-ae2f-8067d74a7f15" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.019">
+    <testcase name="Status code is 400" time="0.019" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.019" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Negative / Title with less than min allowed length" id="76b31c4b-0e06-43d0-bfe6-1bca9f41590c" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.020">
+    <testcase name="Status code is 400" time="0.020" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.020" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Negative / Description with less than min allowed length" id="8be0d9be-71fa-45d5-bf00-381e69c629a2" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.022">
+    <testcase name="Status code is 400" time="0.022" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.022" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Negative / Title with more than max allowed length" id="d60c36b9-c3bf-4aed-a8a9-c5bacaf5dff0" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.021">
+    <testcase name="Status code is 400" time="0.021" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.021" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Creating a course / Negative / Description with more than max allowed length" id="02b9118d-d49f-488a-ba70-edf3ab4b380e" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.023">
+    <testcase name="Status code is 400" time="0.023" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.023" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Getting courses / Get created courses (teacher)" id="bdecb441-779e-476a-9fba-cd36f062d5e7" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 200" time="0.026" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The created course id is in the list of courses" time="0.026" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Getting courses / Get course by id (teacher)" id="1ccf90d8-806f-4d1a-9170-9e2208f03350" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.035">
+    <testcase name="Status code is 200" time="0.035" classname="HwPart3NoskovaAlina"/>
+    <testcase name="id is a non-negative integer" time="0.035" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.035" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is a non-empty string" time="0.035" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Visible is a boolean value" time="0.035" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Getting courses / Get the list of courses (as a teacher)" id="bb7e9e36-3a72-45e7-bf01-57afc5536357" timestamp="2023-09-20T13:20:41.638Z" tests="0" failures="0" errors="0" time="0.021"/>
+  <testsuite name="TEACHER Endpoints testing / Course / Changing course / Change a course (teacher)" id="8c2057fe-3ede-449d-9fb8-9220aaeb901a" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.047">
+    <testcase name="Status code is 200" time="0.047" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.047" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Description is the same in request and response" time="0.047" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Changing course / Checking that the course has changed (teacher)" id="b41c75f8-47f0-4978-a574-0acbe1a45266" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.632">
+    <testcase name="Status code is 200" time="0.632" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The created course id is in the list of courses" time="0.632" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The title of course is correct in the list of courses" time="0.632" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The description of course is correct in the list of courses" time="0.632" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Course materials / Create course materials (teacher)" id="2df0fc86-1515-44d5-8018-989fd0995f7f" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.041">
+    <testcase name="Status code is 200" time="0.041" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is the same in request and response" time="0.041" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Data is the same in request and response" time="0.041" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Course materials / Checking that materials have been created" id="a0da248d-7229-4002-ae79-5358043f6cda" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.028">
+    <testcase name="Status code is 200" time="0.028" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The title of data is correct in the list of courses" time="0.028" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The R language can be used for many interesting tasks." time="0.028" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Enrolling the course (negative) / Try to enroll the course (teacher)" id="dfd762b9-bb47-4307-aed5-9205732b0642" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 403" time="0.026" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Status code name has string" time="0.026" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.026" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Removing course / Remove a course (teacher)" id="75715164-5503-477e-b9a7-06248b6960e9" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.044">
+    <testcase name="Status code is 200" time="0.044" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response message indicates successful deletion" time="0.044" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Removing course / Checking that the course has been deleted" id="4a98ba99-40c2-4053-8d52-e73ca36d44c7" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 404" time="0.026" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.026" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Removing course / Remove test course 1 (teacher)" id="f2aab444-875b-42cc-bd73-7d7e17f27a5e" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.046">
+    <testcase name="Status code is 200" time="0.046" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response message indicates successful deletion" time="0.046" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Removing course / Remove test course 2 (teacher)" id="d19f0398-fce7-4178-9988-4f299281f544" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.042">
+    <testcase name="Status code is 200" time="0.042" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response message indicates successful deletion" time="0.042" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Removing course / Remove test course 3 (teacher)" id="9b2a13b1-9bfe-4aef-9402-fdd1b13cbf9e" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.041">
+    <testcase name="Status code is 200" time="0.041" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response message indicates successful deletion" time="0.041" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Removing course / Remove test course 4 (teacher)" id="28ba72d2-1f7e-4842-b6d1-2d5c77e29594" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.052">
+    <testcase name="Status code is 200" time="0.052" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response message indicates successful deletion" time="0.052" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Removing course / Remove test course 5 (teacher)" id="e8c8658c-22e1-4dcc-a3f2-8a84da716dd6" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.039">
+    <testcase name="Status code is 200" time="0.039" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response message indicates successful deletion" time="0.039" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Removing course / Remove test course 6 (teacher)" id="cdff143a-71c6-4817-ad24-91564d8c1740" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.045">
+    <testcase name="Status code is 200" time="0.045" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response message indicates successful deletion" time="0.045" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Removing course / Remove test course 7 (teacher)" id="9c959d13-1277-40f4-b309-6729f6675c02" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.038">
+    <testcase name="Status code is 200" time="0.038" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response message indicates successful deletion" time="0.038" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Removing course / Remove test course 8 (teacher)" id="030db3ee-4672-44d1-9177-b36635373074" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.044">
+    <testcase name="Status code is 200" time="0.044" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response message indicates successful deletion" time="0.044" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Removing course / Remove test course 9 (teacher)" id="a1d96c85-f289-41d4-9d32-1755cdab80da" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.051">
+    <testcase name="Status code is 200" time="0.051" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response message indicates successful deletion" time="0.051" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="TEACHER Endpoints testing / Course / Removing course / Remove test course 10 (teacher)" id="f0cca0c8-1460-4a92-8535-0c771fd2e1f1" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.037">
+    <testcase name="Status code is 200" time="0.037" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response message indicates successful deletion" time="0.037" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / User / Create a student" id="84c95627-5d10-43a3-a24a-1ddb9de90570" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.350">
+    <testcase name="Status code is 200" time="0.350" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Username is the same in request and response" time="0.350" classname="HwPart3NoskovaAlina"/>
+    <testcase name="First Name is the same in request and response" time="0.350" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Last Name is the same in request and response" time="0.350" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Email is the same in request and response" time="0.350" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Login / Sign into the app (student)" id="82db346a-0c79-4869-839a-0a148ee10cdd" timestamp="2023-09-20T13:20:41.638Z" tests="1" failures="0" errors="0" time="0.353">
+    <testcase name="Status code is 200" time="0.353" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Category / Get the list of categories (as student)" id="2ae34619-c082-4f3a-9a4c-ac82087a2a59" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.059">
+    <testcase name="Response status code is 200" time="0.059" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response is an array" time="0.059" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Each category object has the required fields - id and title" time="0.059" classname="HwPart3NoskovaAlina"/>
+    <testcase name="id is a non-negative integer" time="0.059" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.059" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Category / Get category by id (as a student)" id="8ecf0489-7f40-4b00-8161-8770730b9e82" timestamp="2023-09-20T13:20:41.638Z" tests="4" failures="0" errors="0" time="0.029">
+    <testcase name="Response status code is 200" time="0.029" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has required fields - id and title" time="0.029" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Id is a non-negative integer" time="0.029" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Title is a non-empty string" time="0.029" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Category / Try to create a category (as a student)" id="7334d61b-b2e4-4c42-be35-6ec8dc695c58" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.027">
+    <testcase name="Response status code is 403" time="0.027" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the 'errors' field" time="0.027" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The errors field has correct massage" time="0.027" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Category / Try to change category (as a student)" id="e9d56809-7b2a-433b-8c83-8be68c07f768" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.032">
+    <testcase name="Response status code is 403" time="0.032" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the 'errors' field" time="0.032" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The errors field has correct massage" time="0.032" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Category / Try to remove category by id (as a student)" id="eb89ca8c-0d5b-4054-91cb-e05b4b364904" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.034">
+    <testcase name="Response status code is 403" time="0.034" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has the 'errors' field" time="0.034" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The errors field has correct massage" time="0.034" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Course / Get the list of courses (student)" id="8f639b6b-251b-4e14-98b4-be47c2bfb50f" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.705">
+    <testcase name="Status code is 200" time="0.705" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response is an array" time="0.705" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The id of the created course is a non-negative integer" time="0.705" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Course / Get course by id (student)" id="84e5f23c-59b9-4d0f-a560-4fc1295aac2c" timestamp="2023-09-20T13:20:41.638Z" tests="5" failures="0" errors="0" time="0.029">
+    <testcase name="Status code is 200" time="0.029" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response has required fields" time="0.029" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response title is 'Python with SQL'" time="0.029" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Response description is 'Course about Python and SQL'" time="0.029" classname="HwPart3NoskovaAlina"/>
+    <testcase name="visible should be a boolean value" time="0.029" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Course / Getting materials by course id" id="e4ca8822-099f-4728-91ad-27e1a4060507" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.029">
+    <testcase name="Status code is 200" time="0.029" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The title of data is correct in the list of courses" time="0.029" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The R language can be used for many interesting tasks." time="0.029" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Course / Enroll the course (student)" id="8feca52f-0645-49df-9372-d8aa2c1a0c32" timestamp="2023-09-20T13:20:41.638Z" tests="1" failures="0" errors="0" time="0.040">
+    <testcase name="Status code is 200" time="0.040" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Course / Сhecking that the student is enrolled in the course" id="55a37c6b-1762-487d-b021-bb38e10f22b2" timestamp="2023-09-20T13:20:41.638Z" tests="2" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 200" time="0.026" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The enrolled course id is in the list of courses" time="0.026" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Course / Try to create a course (student)" id="60aed64a-60f4-4ea5-8e60-913b241b4742" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.031">
+    <testcase name="Status code is 403" time="0.031" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Status code name has string" time="0.031" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.031" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Course / Try to change a course (student)" id="3eab426f-c405-435b-8924-87118829a9fb" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.028">
+    <testcase name="Status code is 403" time="0.028" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Status code name has string" time="0.028" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.028" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Course / Try to create course materials (student)" id="fc4e7428-ac0d-4605-8c1c-9baa8540c432" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.032">
+    <testcase name="Status code is 403" time="0.032" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Status code name has string" time="0.032" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.032" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="STUDENT Endpoints testing / Course / Try to delete a course (student)" id="84c07add-902b-47c2-a644-683a99eb64af" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 403" time="0.027" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Status code name has string" time="0.027" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.027" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="NO AUTH Endpoints testing / Try to get the list of courses (no auth)" id="05517df9-2b28-4268-b454-0e39cc1f2dde" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.018">
+    <testcase name="Status code is 401" time="0.018" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Status code name has string" time="0.018" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.018" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="NO AUTH Endpoints testing / Try to create a course (no auth)" id="2d781dd9-bdeb-45c0-9f71-45e3595b3de8" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.023">
+    <testcase name="Status code is 401" time="0.023" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Status code name has string" time="0.023" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.023" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="NO AUTH Endpoints testing / Try to change a course (no auth)" id="65da12fe-ced4-44ad-b924-b37acb04a8fa" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.020">
+    <testcase name="Status code is 401" time="0.020" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Status code name has string" time="0.020" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.020" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="NO AUTH Endpoints testing / Try to create course materials (no auth)" id="34add803-e155-42be-8c14-3575ce2df17c" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 401" time="0.027" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Status code name has string" time="0.027" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.027" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="NO AUTH Endpoints testing / Try to enroll the course (no auth)" id="d75ad56c-3dfc-4768-9f98-a867060735ae" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.023">
+    <testcase name="Status code is 401" time="0.023" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Status code name has string" time="0.023" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.023" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+  <testsuite name="NO AUTH Endpoints testing / Try to delete a course (no auth)" id="fd98c641-8d83-46a8-8760-413ff0f64764" timestamp="2023-09-20T13:20:41.638Z" tests="3" failures="0" errors="0" time="0.020">
+    <testcase name="Status code is 401" time="0.020" classname="HwPart3NoskovaAlina"/>
+    <testcase name="Status code name has string" time="0.020" classname="HwPart3NoskovaAlina"/>
+    <testcase name="The error message is displayed correctly" time="0.020" classname="HwPart3NoskovaAlina"/>
+  </testsuite>
+</testsuites>
